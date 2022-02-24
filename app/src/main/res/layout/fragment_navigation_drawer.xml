@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdtp_white">
+
+
+    <LinearLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_drawer_layout"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profile_image"
+
+            android:layout_width="70dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_profile" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:paddingRight="16sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_empty" />
+
+            <TextView
+                android:id="@+id/title_of_drawer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingTop="16dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="16dp"
+                android:textColor="@android:color/transparent"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_person_black_24dp" />
+
+        </LinearLayout>
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:gravity="right"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingStart="16dp"-->
+        <!--android:paddingLeft="16dp"-->
+        <!--android:paddingEnd="16sp"-->
+        <!--android:paddingRight="16sp">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="right"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:persianFontAddress="iran_sans_medium.ttf"-->
+        <!--android:drawableTint=""-->
+        <!--android:text="500"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:persianFontAddress="iran_sans_medium.ttf"-->
+        <!--android:drawableTint=""-->
+        <!--android:text="امتیاز هفتگی: "-->
+        <!--android:textSize="14sp"/>-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="right"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:drawableTint=""-->
+        <!--app:persianFontAddress="iran_sans_medium.ttf"-->
+        <!--android:text="500" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:persianFontAddress="iran_sans_medium.ttf"-->
+        <!--android:drawableTint=""-->
+        <!--android:text="امتیاز کل:" />-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:drawableTint=""-->
+    <!--app:persianFontAddress="iran_sans_medium.ttf"-->
+    <!--android:text="5" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:persianFontAddress="iran_sans_medium.ttf"-->
+    <!--android:drawableTint=""-->
+    <!--android:text="امتیاز شرکت در قرعه کشی:    " />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/exit_profile"
+        android:layout_below="@id/nav_header_container"
+        android:layout_marginTop="15dp" />
+
+
+    <TextView
+        android:id="@+id/version"
+        style="@style/persianTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:paddingBottom="16dp"
+        android:text="@string/sample_version"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/exit_profile"
+        style="@style/persianTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/version"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:drawableStart="@drawable/ic_exit_to_app_black_24dp"
+        android:drawablePadding="16dp"
+        android:drawableTint="#70000000"
+        android:gravity="start"
+        android:paddingEnd="30dp"
+        android:paddingTop="20dp"
+        android:paddingStart="30dp"
+        android:paddingBottom="50dp"
+        android:text="@string/exit_account"
+        android:textSize="13sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

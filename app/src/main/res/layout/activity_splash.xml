@@ -1,0 +1,56 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mainLayout"
+    android:background="@drawable/bg_main">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lotti_animation"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="280dp">
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ghasedak"
+            android:textColor="#396AFC"
+            android:textSize="32sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/school_service_text"
+            android:layout_below="@id/app_name"
+            style="@style/persianTextView"
+            android:layout_centerHorizontal="true"
+            android:text="@string/school_service"
+            android:paddingTop="16dp"
+            android:gravity="center"
+            android:background="@color/transparent"
+            android:textColor="@color/text_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+             />
+
+        <TextView
+            style="@style/persianTextView"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:background="@color/transparent"
+            android:id="@+id/version_number"
+            android:gravity="center"
+            android:text="@string/test_version"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

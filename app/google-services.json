@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "686137881362",
+    "firebase_url": "https://ghasedakfamily-213707.firebaseio.com",
+    "project_id": "ghasedakfamily-213707",
+    "storage_bucket": "ghasedakfamily-213707.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686137881362:android:52e193f0bcc828f2",
+        "android_client_info": {
+          "package_name": "ir.ghasedakservice.app.family"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686137881362-l5slqdpgochlg24vtbbn2nlebs5rj62d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmgVVoLfRyQBJ_0Hic170gPzz9t2L7T2M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

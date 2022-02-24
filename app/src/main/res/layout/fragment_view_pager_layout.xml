@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_main_layout"
+    style="@style/mainLayout"
+    android:background="@drawable/bg_bottom_sheet">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_bottom_sheet_style">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/chevron"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginTop="6dp"
+            app:lottie_fileName="chevron.json" />
+
+        <RelativeLayout
+            android:id="@+id/simple_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_below="@id/chevron">
+
+            <LinearLayout
+                android:id="@+id/create_new_service_peek"
+                style="@style/ButtonLight"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="16dp"
+                android:focusable="true"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/miss_icon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_new_service" />
+
+                <TextView
+                    android:id="@+id/miss_text"
+                    style="@style/persianTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="@string/add_service_student"
+                    android:textColor="@color/dark_gray" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/student_details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/student_default_image"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/bg_oval_red"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_drawer_student" />
+
+                <TextView
+                    android:id="@+id/name_of_student"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/student_default_image"
+                    android:layout_marginTop="4dp"
+                    android:layout_toEndOf="@id/student_default_image"
+                    android:background="@color/transparent"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/iran_sans_bold"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxWidth="125sp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    tools:text="هاشم جهانگیری" />
+
+                <TextView
+                    android:id="@+id/name_of_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/student_default_image"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toEndOf="@id/student_default_image"
+                    android:background="@color/transparent"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/iran_sans_medium"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxWidth="125sp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textSize="13sp"
+
+                    tools:text="مدرسه شهید بهشتی" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/service_status_peek"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="24dp"
+                    android:padding="4dp"
+                    app:lottie_loop="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="25dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/simple_details_layout"
+            android:layout_centerHorizontal="true" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/background_image"
+            android:layout_width="180dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/separator"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/all_service_status"
+            style="@style/persianTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/background_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="14dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:textSize="14sp"
+            tools:text="جهت پرداخت 30 هزار تومنی  " />
+
+        <LinearLayout
+            android:id="@+id/driver_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_above="@id/call_button"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/driver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran_sans_medium"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:padding="6dp"
+                android:text="نام راننده" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:padding="6dp">
+
+                <RelativeLayout
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/plate_country"
+                        android:layout_width="38dp"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_plate_ir"
+                        android:fontFamily="@font/iran_sans_medium" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/plate_country"
+                        android:fontFamily="@font/iran_sans_light"
+                        android:textColor="@color/white"
+                        android:layout_centerHorizontal="true"
+                        android:text="ایران"
+                        android:textSize="6sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/plate_number"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_plate_number"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/iran_sans_medium" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/create_new_service"
+            style="@style/ButtonLight"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/light_layout_ripple"
+            android:clickable="true"
+            android:drawablePadding="16dp"
+            android:focusable="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/button_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_paytosubscribe" />
+
+            <TextView
+                android:id="@+id/button_text"
+                style="@style/persianTextView"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/add_service"
+                android:textColor="@color/text_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pay_new_service"
+            style="@style/ButtonLight"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/light_layout_ripple"
+            android:clickable="true"
+            android:drawablePadding="16dp"
+            android:focusable="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/pay_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_paytosubscribe" />
+
+            <TextView
+                android:id="@+id/pay_text"
+                style="@style/persianTextView"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/pay"
+                android:textColor="@color/text_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/call_button"
+            style="@style/ButtonLight"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_above="@id/absent_button"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/main_button_ripple"
+            android:clickable="true"
+            android:drawablePadding="16dp"
+            android:focusable="true"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/call_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_call_driver" />
+
+            <TextView
+                android:id="@+id/call_text"
+                style="@style/persianTextView"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/call_to_driver"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/absent_button"
+            style="@style/ButtonLight"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/light_layout_ripple"
+            android:clickable="true"
+            android:drawablePadding="16dp"
+            android:focusable="true"
+            android:textColor="@color/text_blue"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/absent_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_call_driver" />
+
+            <TextView
+                android:id="@+id/absent_text"
+                style="@style/persianTextView"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/student_absent"
+                android:textColor="@color/light_gray" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

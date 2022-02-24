@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/main_layout"
+        android:orientation="vertical">
+
+        <!--<com.airbnb.lottie.LottieAnimationView-->
+            <!--android:id="@+id/image_dialog"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--app:lottie_loop="true"-->
+            <!--/>-->
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/persianTitleText"
+            android:text="@string/add_school" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/input_text"
+                style="@style/EditText"
+                android:inputType="text"
+                android:hint="@string/school_name_for_add" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/action_button"
+            style="@style/ButtonDark"
+            tools:text="سلام" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/main_layout"
+        android:layout_marginBottom="24dp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

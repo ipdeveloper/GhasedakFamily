@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    style="@style/mainLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+            <!--android:src="@drawable/bg_activty_pattern" -->
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_login">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_arrow_forward_black_32dp"
+                    android:tint="#777777"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="140dp"
+                        android:text="@string/ghasedak"
+                        android:textColor="#396AFC"
+                        android:textSize="28sp" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/persianTextView"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24sp"
+                    android:layout_marginRight="24dp"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/please_insert_your_phone_for_login"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14dp" />
+
+                <android.support.design.widget.TextInputLayout style="@style/textInputLayout">
+
+                    <EditText
+                        android:id="@+id/input_login_username"
+                        style="@style/EditText"
+                        android:hint="@string/phone_number"
+                        android:inputType="phone"
+                        android:maxLength="11" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressbar_for_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_login"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/ButtonDark"
+            android:text="@string/go_forward"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

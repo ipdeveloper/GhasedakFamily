@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/btn_no"
+    android:fontFamily="@font/iran_sans_bold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="8dp"
+    android:layout_weight="1"
+    android:textDirection="rtl"
+    android:gravity="center"
+    android:paddingBottom="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:text="@string/close"
+    android:focusable="false"
+    android:textColor="@color/curve_shape"
+
+    android:textSize="13dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

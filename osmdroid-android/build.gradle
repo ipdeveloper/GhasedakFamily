@@ -1,0 +1,18 @@
+description = 'An Android library to display OpenStreetMap views.'
+apply plugin: 'com.android.library'
+//apply from: "https://raw.githubusercontent.com/gradle-fury/gradle-fury/v1.1.4/gradle/android-support.gradle"
+
+android {
+    compileSdkVersion 28
+    lintOptions {
+        abortOnError false
+    }
+    defaultConfig {
+        minSdkVersion 17
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+}
+

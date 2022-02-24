@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/mainLayout"
+    android:layout_marginTop="26dp">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_activty_pattern" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/pageTitleText"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/back"
+        android:gravity="start"
+        android:padding="16dp"
+        android:text="@string/parent_profile"
+        android:textColor="@color/text_gray"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_below="@id/title"
+        android:background="@drawable/shadow_status_bar" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="16dp"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        android:tint="#777777" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="78dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout style="@style/textInputLayout">
+
+                <EditText
+                    style="@style/EditText"
+                    android:fontFamily="@font/iran_sans_medium"
+                    android:hint="@string/name"
+                    android:textCursorDrawable="@null" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout style="@style/textInputLayout">
+
+                <EditText
+                    style="@style/EditText"
+                    android:layout_marginTop="40dp"
+                    android:hint="@string/name"
+                    android:fontFamily="@font/iran_sans_medium"
+                    android:textCursorDrawable="@null"
+                    android:background="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:lottie_loop="true"
+                android:id="@+id/lotti"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+

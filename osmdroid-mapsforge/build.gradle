@@ -1,0 +1,22 @@
+description = "An Android library to display OpenStreetMap views using Mapsforge. May use non ASF licensed dependencies"
+apply plugin: 'com.android.library'
+//apply from: "https://raw.githubusercontent.com/gradle-fury/gradle-fury/v1.1.4/gradle/android-support.gradle"
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 17
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+
+    //Mapsforge rendering and database support, which is LGPL
+    implementation 'org.mapsforge:mapsforge-map-android:0.8.0'
+    implementation 'org.mapsforge:mapsforge-map:0.8.0'
+    implementation 'org.mapsforge:mapsforge-themes:0.8.0'
+
+    //osmdroid which is ASF licensed
+    implementation project(':osmdroid-android')
+}

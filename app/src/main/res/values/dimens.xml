@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">16sp</dimen>
+
+    <dimen name="editTextHeight">52dp</dimen>
+    <dimen name="editTextPadding">16dp</dimen>
+    <dimen name="editTextPaddingStart">16dp</dimen>
+    <dimen name="editTextPaddingEnd">16dp</dimen>
+    <dimen name="editTextPaddingBottom">16dp</dimen>
+    <dimen name="editTextPaddingTop">16dp</dimen>
+    <dimen name="editTextMargin">16dp</dimen>
+    <dimen name="editTextMarginStart">24</dimen>
+    <dimen name="editTextMarginEnd">24dp</dimen>
+    <dimen name="editTextMarginBottom">16dp</dimen>
+    <dimen name="editTextMarginTop">16dp</dimen>
+    <dimen name="editTextBoxRadiosTopStart">26dp</dimen>
+    <dimen name="editTextBoxRadiosBottomStart">26dp</dimen>
+    <dimen name="editTextBoxRadiosBottomEnd">26dp</dimen>
+    <dimen name="editTextBoxRadiosTopEnd">26dp</dimen>
+
+    <dimen name="textViewPadding">16dp</dimen>
+    <dimen name="textViewPaddingStart">16dp</dimen>
+    <dimen name="textViewPaddingEnd">16dp</dimen>
+    <dimen name="textViewPaddingBottom">16dp</dimen>
+    <dimen name="textViewPaddingTop">16dp</dimen>
+    <dimen name="textViewMargin">16dp</dimen>
+    <dimen name="textViewMarginStart">16dp</dimen>
+    <dimen name="textViewMarginEnd">16dp</dimen>
+    <dimen name="textViewMarginBottom">16dp</dimen>
+    <dimen name="textViewMarginTop">16dp</dimen>
+
+    <dimen name="buttonTextPadding">16dp</dimen>
+    <dimen name="buttonTextPaddingStart">16dp</dimen>
+    <dimen name="buttonTextPaddingEnd">16dp</dimen>
+    <dimen name="buttonTextPaddingBottom">16dp</dimen>
+    <dimen name="buttonTextPaddingTop">16dp</dimen>
+    <dimen name="buttonMargin">24dp</dimen>
+    <dimen name="buttonMarginStart">24dp</dimen>
+    <dimen name="buttonMarginEnd">24dp</dimen>
+    <dimen name="buttonMarginBottom">24dp</dimen>
+    <dimen name="buttonMarginTop">16dp</dimen>
+    <dimen name="buttonRadius">7dp</dimen>
+
+    <dimen name="imagePadding">16dp</dimen>
+    <dimen name="imagePaddingStart">16dp</dimen>
+    <dimen name="imagePaddingEnd">16dp</dimen>
+    <dimen name="imagePaddingBottom">16dp</dimen>
+    <dimen name="imagePaddingTop">16dp</dimen>
+    <dimen name="imageMargin">16dp</dimen>
+    <dimen name="imageMarginStart">16dp</dimen>
+    <dimen name="imageMarginEnd">16dp</dimen>
+    <dimen name="imageMarginBottom">16dp</dimen>
+    <dimen name="imageMarginTop">16dp</dimen>
+    <dimen name="nav_drawer_width">260dp</dimen>
+
+</resources>

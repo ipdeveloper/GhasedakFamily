@@ -1,0 +1,108 @@
+<resources >
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--this style use for main layout that handle multi language app-->
+    <style name="mainLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:layoutDirection">locale</item>
+    </style>
+
+    <!--this style use for edit text in whole app-->
+    <style name="EditText" parent="text">
+        <item name="android:layout_height">52dp</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/iran_sans_medium</item>
+        <item name="android:background">@drawable/edit_text_bg_style</item>
+    </style>
+
+    <!--this style use for dialog title in whole app-->
+    <style name="persianTitleText" parent="text">
+        <item name="android:fontFamily">@font/iran_sans_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/titleTextSize</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="pageTitleText" parent="text">
+        <item name="android:fontFamily">@font/iran_sans_medium</item>
+        <item name="android:gravity">end</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textSize">@dimen/titleTextSize</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!--this style use for text view in whole app-->
+    <style name="persianTextView" parent="text">
+        <item name="android:layout_height">52dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/iran_sans_light</item>
+        <item name="android:background">@drawable/edit_text_bg_style</item>
+    </style>
+
+    <style name="ButtonDark">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:background">@drawable/main_button_ripple</item>
+        <item name="android:layout_marginStart">@dimen/buttonMarginStart</item>
+        <item name="android:layout_marginEnd">@dimen/buttonMarginEnd</item>
+        <item name="android:layout_marginBottom">@dimen/buttonMarginBottom</item>
+        <item name="android:layout_marginTop">@dimen/buttonMarginTop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/iran_sans_bold</item>
+        <item name="android:textColor">@color/buttonTextColor</item>
+    </style>
+
+    <style name="ButtonLight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:background">@drawable/light_button_ripple</item>
+        <item name="android:layout_marginStart">@dimen/buttonMarginStart</item>
+        <item name="android:layout_marginEnd">@dimen/buttonMarginEnd</item>
+        <item name="android:layout_marginBottom">@dimen/buttonMarginBottom</item>
+        <item name="android:layout_marginTop">@dimen/buttonMarginTop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/iran_sans_bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!--this style use for textInputLayout that has background and boxLine in whole app-->
+    <style name="textInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="boxStrokeColor">@color/blue_gray800</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="android:color">@color/light_gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/buttonRadius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/buttonRadius</item>
+        <item name="boxCornerRadiusTopStart">@dimen/buttonRadius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/buttonRadius</item>
+
+    </style>
+
+    <!--this style use for basic text attribute in whole app-->
+    <style name="text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:textColor">@color/defaultTextColor</item>
+    </style>
+
+</resources>
+

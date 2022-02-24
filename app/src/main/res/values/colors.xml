@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">@color/blue_gray800</color>
+
+    <!--in app colors-->
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="buttonBackgroundColor">#000000</color>
+    <color name="editTextColor">#000000</color>
+    <color name="editTextBackgroundColor">#000000</color>
+    <color name="defaultTextColor">#000000</color>
+    <color name="curve_shape">#ee37474F</color>
+    <color name="dark_gray">#484848</color>
+    <color name="light_gray">#BFBFBF</color>
+    <color name="text_blue">#396AFC</color>
+    <color name="transparent">@android:color/transparent</color>
+
+
+    <color name="primary_text_material_dark">#000000</color>
+    <color name="darker_gray">#888</color>
+
+
+    <!-- My Color -->
+    <color name="color_blue_light">#22b7ff</color>
+    <color name="text_gray">#777777</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue_gray800">#37474F</color>
+    <color name="ripple_white">#4BFFFFFF</color>
+    <color name="ripple_blue">#19396AFC</color>
+    <color name="ripple_under">#263238</color>
+
+
+    <color name="ripple_dark_pressed">@color/ripple_under</color>
+    <color name="ripple_light_pressed">#d6e0ff</color>
+    <color name="ripple_dark_background_color">@color/text_blue</color>
+    <color name="ripple_light_background_color">#FFFFFF</color>
+    <color name="ripple_color">@color/ripple_white</color>
+    <color name="red_light">#f93a3a</color>
+</resources>

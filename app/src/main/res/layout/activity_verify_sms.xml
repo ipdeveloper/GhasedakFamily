@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    style="@style/mainLayout"
+    android:layout_marginTop="26dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_activty_pattern" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_below="@id/title"
+        android:background="@drawable/shadow_status_bar" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="16dp"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        android:tint="#777777" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnVerifyLogin"
+        android:layout_below="@+id/back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/sms_animated"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter" />
+
+
+            <TextView
+                android:id="@+id/verify_title_text"
+                style="@style/persianTextView"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="14sp"
+                android:layout_marginRight="64dp"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:maxLines="3"
+
+                android:padding="8dp"
+                android:text="@string/send_six_digit_code" />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/textInputLayout">
+            <EditText
+                android:id="@+id/verify_et"
+                style="@style/EditText"
+                android:hint="@string/six_digit"
+                android:inputType="phone"
+                android:maxLength="6" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/timer"
+                style="@style/persianTextView"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:text="@string/time_of_request"
+                android:textColor="#BFBFBF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressbar_for_check_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnVerifyLogin"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnVerifyLogin"
+        style="@style/ButtonDark"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="@string/request_again" />
+
+</RelativeLayout>

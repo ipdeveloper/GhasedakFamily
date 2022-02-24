@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mainLayout"
+    android:layout_marginTop="26dp">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_activty_pattern" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/pageTitleText"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/back"
+        android:gravity="start"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/parent_profile"
+        android:textColor="@color/text_gray"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_below="@id/title"
+        android:background="@drawable/shadow_status_bar" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="16dp"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        android:tint="#777777" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="78dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout style="@style/textInputLayout">
+
+                <EditText
+                    android:id="@+id/input_name"
+                    style="@style/EditText"
+                    android:hint="@string/name"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout style="@style/textInputLayout">
+
+                <EditText
+                    android:id="@+id/input_last_name"
+                    style="@style/EditText"
+                    android:hint="@string/family"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout style="@style/textInputLayout">
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    style="@style/EditText"
+                    android:background="@drawable/edittext_bg_style"
+                    android:enabled="false"
+                    android:hint="@string/phone_number"
+                    tools:text="09153758915" />
+            </android.support.design.widget.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:clickable="false" style="@style/textInputLayout">
+                    <EditText
+                        android:clickable="false"
+                        android:id="@+id/state"
+                        style="@style/EditText"
+                        android:enabled="false"
+                        android:hint="@string/state" />
+                </android.support.design.widget.TextInputLayout>
+                <View
+                    android:id="@+id/state_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:clickable="false" style="@style/textInputLayout">
+                    <EditText
+                        android:clickable="false"
+                        android:id="@+id/city"
+                        style="@style/EditText"
+                        android:enabled="false"
+                        android:hint="@string/city" />
+                </android.support.design.widget.TextInputLayout>
+                <View
+                    android:id="@+id/city_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/profile_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/save_profile_details"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/save_profile_details"
+        style="@style/ButtonDark"
+        android:layout_alignParentBottom="true"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+
+        android:textSize="18sp" />
+
+</RelativeLayout>
+

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mainLayout">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentEnd="true"
+        android:padding="12dp"
+        android:layout_margin="12dp"
+        android:id="@+id/exit_dialog"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_support_big"/>
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/call_to_support"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackground"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/call_to_support_image"
+                android:src="@drawable/ic_call_support"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran_sans_medium"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:text="تماس با پشتیبانی "/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/iran_sans_medium"
+            android:layout_marginTop="42dp"
+            android:layout_gravity="center_horizontal"
+            android:text="اطلاعات بیشتر در شبکه های اجتماعی"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="36dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+            <LinearLayout
+                android:id="@+id/telegram_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="12dp"
+                android:gravity="center"
+                android:background="?selectableItemBackground">
+                <ImageView
+                    android:id="@+id/telegram_image"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_telegram"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/aparat_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="12dp"
+                android:gravity="center"
+                android:background="?selectableItemBackground">
+                <ImageView
+                    android:id="@+id/aparat_image"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_aparat"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linkedin_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="12dp"
+                android:gravity="center"
+                android:background="?selectableItemBackground">
+                <ImageView
+                    android:id="@+id/linkedin_image"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_linkedin"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/instagram_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:focusable="true"
+                android:padding="12dp"
+                android:background="?selectableItemBackground">
+                <ImageView
+                    android:id="@+id/instagram_image"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_instagram"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
